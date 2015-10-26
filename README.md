@@ -46,10 +46,26 @@ contacts["Jon Snow"][:favorite_icecream_flavors]
 #  => ["chocolate", "vanilla"]
 ```
 
-How can we add a flavor to the list? Well, `:favorite_icecream_flavors` is an array, so we can use the same syntax as above to access that array along with our old friend `<<` (the shovel method) to add an item to the array. Let's take a look: 
+How can we add a flavor to the list? Well, `:favorite_icecream_flavors` is an array, so we can use the same syntax as above to access that array along with our old friend `<<` (the shovel method) to add an item to the array. There are two ways we can do this. Let's take a look. 
+
+####Option 1:
 
 ```ruby
 contacts["Jon Snow"][:favorite_icecream_flavors] << "mint chip"
+```
+####Option 2: More verbose
+
+If the above option isn't clear, we can break it down step by step.
+
+* First, grab the value (which itself is another hash) of the "Jon Snow" key, and store it in a variable called `jon_snow`: `jon_snow = contacts["Jon Snow"]`
+* Second, grab the value of Jon Snow's favorite ice cream, and store that array in a variable: `jons_fav_ice_cream = jon_snow[:favorite_icecream_flavors]`
+* Third, add the new ice cream to `jons_fav_ice_cream` using the shovel (`<<`) operator: `jons_fav_ice_cream << "mint chip"`
+
+```ruby
+jon_snow = contacts["Jon Snow"]
+jons_fav_ice_cream = jon_snow[:favorite_icecream_flavors]
+jons_fav_ice_cream << "mint chip"
+```
 
 puts contacts 
 #  => {
