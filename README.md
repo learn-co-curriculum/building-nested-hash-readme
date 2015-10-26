@@ -67,6 +67,7 @@ jons_fav_ice_cream = jon_snow[:favorite_icecream_flavors]
 jons_fav_ice_cream << "mint chip"
 ```
 
+```ruby
 puts contacts 
 #  => {
   "Jon Snow" => {
