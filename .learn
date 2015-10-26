@@ -1,5 +1,6 @@
 tags:
   - readme
+  - nested hashes
 languages:
   - ruby
 resources: 0
