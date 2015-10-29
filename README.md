@@ -1,15 +1,17 @@
 # Building Nested Hashes
 
+## Overview
+
+We'll take a closer look at nested, or multidimensional, hashes and how to add data to them.
+
 ## Objectives
 
-In this lesson, we'll be taking a closer look at multidimensional, or nested, hashes. By the end of this lesson, you should be familiar with:
+1. Add a new value to a key in a nested hash.
+2. Add new key/value pairs to a nested hash.
 
-* The difference between single level and nested hashes
-* How to add data to a nested hash
+## Adding Information to Nested Hashes
 
-## Nested Hashes
-
-We are used to seeing single level hashes that looks like this:
+As a refresher, we were used to seeing single level hashes that look like this:
 
 ```ruby
 jon_snow = {
@@ -17,7 +19,7 @@ jon_snow = {
   email: "jon_snow@thewall.we"
 }
 ```
-However, what if we want to have a more complicated system that can catalog several people. A nested hash will be particularly useful in this case. 
+However, what if we want to have a more complicated system that can catalog several people? A nested hash will be particularly useful in this case. 
 
 Let's say we have the following nested hash: 
 
@@ -34,9 +36,6 @@ contacts = {
   }
 }
 ```
-### Adding Information to Nested Hashes
-
-#### Example 1:
 
 Your good buddy Jon Snow has just tried mint chip ice cream for the first time. He loved it a lot and now you need to add "mint chip" to his list of favorite ice creams. We already know how to access the array of ice cream flavors that constitute the value of the `:favorite_icecream_flavors` key: 
 
@@ -53,7 +52,7 @@ How can we add a flavor to the list? Well, `:favorite_icecream_flavors` is an ar
 ```ruby
 contacts["Jon Snow"][:favorite_icecream_flavors] << "mint chip"
 ```
-####Option 2: More verbose
+####Option 2:
 
 If the above option isn't clear, we can break it down step by step.
 
@@ -83,7 +82,7 @@ puts contacts
 }
 ```
 
-#### Example 2: 
+## Adding Key/Value Pairs to Nested Hashes 
 
 Now let's say that you want to add a whole new key/value pair to your Jon Snow contact—his address. In a simpler hash with just one level of key value pairs, we've already learned how to add new key/value pairs. Here's a reminder: 
 
