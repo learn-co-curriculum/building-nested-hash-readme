@@ -84,7 +84,7 @@ puts contacts
 
 ## Adding Key/Value Pairs to Nested Hashes
 
-Now let's say that you want to add a whole new key/value pair to your Jon Snow contact—his address. In a simpler hash with just one level of key value pairs, we've already learned how to add new key/value pairs. Here's a reminder:
+Now let's say that you want to add a whole new key/value pair to your Jon Snow contact—his address. In a simpler hash with just one level of key/value pairs, we've already learned how to add new key/value pairs. Here's a reminder:
 
 ```ruby
 hash = {first: "first value!", second: "second value!"}
@@ -118,3 +118,5 @@ puts contacts
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/building-nested-hash-readme' title='Building Nested Hashes'>Building Nested Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/building-nested-hash-readme'>Building Nested Hashes</a> on Learn.co and start learning to code for free.</p>
