@@ -117,6 +117,6 @@ puts contacts
 
 ```
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/building-nested-hash-readme' title='Building Nested Hashes'>Building Nested Hashes</a> on Learn.co and start learning to code for free.</p>
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/building-nested-hash-readme'>Building Nested Hashes</a> on Learn.co and start learning to code for free.</p>
+
+
